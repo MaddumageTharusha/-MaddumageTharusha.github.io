@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tharusha Maddumage Portfolio</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Portfolio.</a>
+
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" style="--i:1" class="active">Home</a>
+                <a href="#work" style="--i:2">Work</a>
+                <!-- <a href="#resume" style="--i:3">Resume</a> -->
+                <a href="#about" style="--i:4">About</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </nav>
+        </header>
+        
+        <!-- Home section design -->
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello, I'm</h3>
+                <h1>Tharusha <span>Maddumage</span></h1>
+                <h3>And I'm a <span>Software Engineering</span> Undergraduate.</h3>
+                <h3><span style="color: rgb(120, 0, 255);">#</span> <span class="multiple-text"></span></h3>
+                <p>As a Software Engineering student at Westminster University, I'm passionate about leveraging technology to solve real-world problems. 
+                    Eager to explore and innovate in the ever-evolving landscape of software engineering.</p>
+                
+                <div class="social-media">
+                    <a href="https://www.linkedin.com/in/tharushamd/" style="--i:7"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61555359196233" style="--i:8"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://github.com/MaddumageTharusha" style="--i:9"><i class='bx bxl-github'></i></a>
+                    <a href="https://discord.com/users/700282948254957600" style="--i:10"><i class='bx bxl-discord-alt'></i></a>
+                </div>
+                <a href="#" class="btn">View CV</a>
+            </div>
+            <div class="my-img">
+                <img src="Imgs/myphoto.png" alt="My Photo">
+            </div>
+        </section>
+
+        <!-- Work section design -->
+        <section class="work" id="work">
+            <h2 class="heading">My <span>Projects</span></h2>
+            
+            <div class="work-container">
+                <div class="work-box">
+                    <img src="Imgs/CeraFlaw.jpg" alt="">
+                    <div class="work-layer">
+                        <h4 id="ceraflaw">Cera<span>Flaw</span></h4>
+                        <p>Machine Learning and Computer Vision system for tile visual defect detection.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></box-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-container">
+                <div class="work-box">
+                    <img src="Imgs/Eclipse.png" alt="">
+                    <div class="work-layer">
+                        <h4>Website Design</h4>
+                        <h5 id="eclipse">Eclipse</h5>
+                        <p>Website incorporating enhanced visual appeal and user interaction.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></box-icon></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="work-container">
+                <div class="work-box">
+                    <img src="Imgs/Codes.png" alt="">
+                    <div class="work-layer">
+                        <h4>University</h4>
+                        <h5 id="courseworks">Coursework</h5>
+                        <p>Individual projects done as University courseworks.</p>
+                        <a href="courseworks.html"><i class='bx bx-link-external' ></i></box-icon></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume section design -->
+
+        <!-- About Me section design -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="Imgs/myphoto2.png" alt="My Photo">
+            </div>
+
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Software Developer</h3>
+                <p>I am a dedicated undergraduate student enrolled in the Software Engineering program at Westminster University. Driven by a fervent passion for technology, I am committed to refining my technical skills and leveraging software solutions to address real-world challenges. With an insatiable curiosity for innovation, I am eager to navigate the dynamic terrain of technology, striving to leave a significant mark in the realm of software engineering.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <!-- contact section design -->
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact <span>Me!</span></h2>
+
+            <form action="">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email Subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </form>
+        </section>
+
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>&copy; 2024 Tharusha Maddumage | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+        
+        <!-- scroll reveal -->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
