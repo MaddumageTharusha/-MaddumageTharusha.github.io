@@ -68,9 +68,9 @@ function sendEmail() {
     Phone Number: ${phone.value}<br> Message: ${message.value}<br>`;
 
     Email.send({
-        SecureToken : "bf1ccd3f-4e7b-4e72-96a6-17b8d9f66ba5",
-        To : 'maddumagedontharusha@gmail.com',
-        From : "maddumagedontharusha@gmail.com",
+        SecureToken: "d78a9e0c-d9da-467d-8ea2-6a3a5a00919e",
+        To : 'tharushamd.portfolio@gmail.com',
+        From : "tharushamd.portfolio@gmail.com",
         Subject : subject.value,
         Body : bodyMessage
     }).then(
