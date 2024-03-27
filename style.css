@@ -444,9 +444,34 @@ section {
     resize: none;
 }
 
-.conact form .btn {
+.contact form .btn {
     margin-top: 2rem;
     cursor: pointer;
+}
+
+.contact form .item {
+    border: 2px solid var(--main-color);
+    border-radius: 6px;
+}
+
+.contact form.error .item {
+    border-color: #d93025;
+}
+
+.contact form .error-text {
+    font-size: 14.5px;
+    text-align: left;
+    color: #d93025;
+    margin: -5px 0 10px;
+    display: none;
+}
+
+.contact form.error .error-text {
+    display: block;
+}
+
+.contact form textarea .error-text {
+    margin-top: -10px;
 }
 
 .footer {
