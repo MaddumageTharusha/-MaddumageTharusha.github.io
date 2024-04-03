@@ -3,9 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
-    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projects</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
     <style>
         * {
             font-family: 'Poppins', sans-serif;
@@ -73,7 +75,17 @@
 </head>
 
 <body>
-    <section>
+    <header class="header">
+        <a href="#" class="logo">University Coursework.</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="index.html" style="--i:1" class="active">Back to Home</a>
+        </nav>
+    </header>
+
+    <section id="projects">
         <div class="container">
             <div class="project">
                 <h2>Shopping and Management System</h2>
@@ -112,6 +124,30 @@
             </div>
         </div>
     </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>&copy; 2024 Tharusha Maddumage | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#projects"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+    
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- smtpjs -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- sweetalert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- typed -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

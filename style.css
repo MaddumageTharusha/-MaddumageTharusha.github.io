@@ -307,6 +307,11 @@ section {
     margin: 2rem 0 3rem;
 }
 
+#additional-content {
+    display: none;
+    opacity: 0;
+}
+
 .work {
     background: var(--second-bg-color);
 }
@@ -406,6 +411,23 @@ section {
 .work-layer a i {
     font-size: 2rem;
     color: var(--second-bg-color);
+    margin: 0 0.5rem;
+}
+
+#ceraflaw-link {
+    display: flex;
+    justify-content: space-between; 
+    /* width: 100%;  */
+}
+
+#ceraflaw-link a {
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 5rem; 
+    height: 5rem; 
+    border-radius: 50%;
+    margin: 1rem;
 }
 
 .contact h2 {

@@ -1,3 +1,4 @@
+// ======================================== typing animation funtionality  =========================================================
 var typed = new Typed(".multiple-text", {
     strings: ["Java", "Python", "Ren’Py", "HTML", "CSS", "R", "CI/CD", "Video Editing", "Dart", "ML", "MySQL"],
     typeSpeed: 100,
@@ -5,7 +6,58 @@ var typed = new Typed(".multiple-text", {
     backDelay: 1000,
     loop: true
 });
-// ======================================== toggle icon navbar  =================================================
+
+// ======================================== view cv  =========================================================
+document.addEventListener('DOMContentLoaded', function () {
+    const viewCVButton = document.getElementById('view-cv-btn');
+
+    viewCVButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        window.open('cv/portfolioCV.pdf', '_blank');
+    });
+});
+
+// ======================================== read more buttin funtionality  =========================================================
+document.getElementById('read-more-btn').addEventListener('click', function(event) {
+    event.preventDefault();
+    var additionalContent = document.getElementById('additional-content');
+    if (additionalContent.style.display === 'none' || additionalContent.style.opacity === '0') {
+        additionalContent.style.display = 'block';
+        fadeIn(additionalContent);
+        this.textContent = 'Read Less';
+    } else {
+        fadeOut(additionalContent);
+        this.textContent = 'Read More';
+    }
+});
+
+// ======================================== fade in animation =========================================================
+function fadeIn(element) {
+    var op = 0.1;  // initial opacity
+    element.style.opacity = op;
+    var timer = setInterval(function () {
+        if (op >= 1){
+            clearInterval(timer);
+        }
+        element.style.opacity = op;
+        op += 0.1;
+    }, 30); // Adjust the time interval as needed for smoother animation
+}
+
+// ======================================== fade out animation  =========================================================
+function fadeOut(element) {
+    var op = 1;  // initial opacity
+    var timer = setInterval(function () {
+        if (op <= 0.1){
+            clearInterval(timer);
+            element.style.display = 'none';
+        }
+        element.style.opacity = op;
+        op -= 0.1;
+    }, 20); // Adjust the time interval as needed for smoother animation
+}
+
+// ======================================== toggle icon navbar  =========================================================
 let menuIcon = document.querySelector('#menu-icon')
 let navbar = document.querySelector('.navbar')
 
