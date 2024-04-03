@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     viewCVButton.addEventListener('click', function (event) {
         event.preventDefault();
-        window.open('cv/portfolioCV.pdf', '_blank');
+        window.open('cv/TharushaMaddumage.pdf', '_blank');
     });
 });
 
